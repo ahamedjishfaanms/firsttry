@@ -4,7 +4,34 @@ body {
     font-family: Arial, sans-serif;
 }
 
+@media (max-width: 768px) {
+    /* Adjust the navigation bar for smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the slideshow button positions for smaller screens */
+    .prev, .next {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Adjust the blog post width for smaller screens */
+    .blog-post {
+        width: 100%;
+        max-width: none;
+    }
+}
 /* Navigation Bar Styles */
 .navbar {
     background-color: black;
